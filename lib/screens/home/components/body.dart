@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '../../../constants.dart';
-import './category_Card.dart';
 import './search_form.dart';
-import '../../../models/category.dart';
-import '../../../models/product.dart';
 import './categories.dart';
 import './products_scroll_list.dart';
 import './section_header_seeall.dart';
-import './product_card.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);

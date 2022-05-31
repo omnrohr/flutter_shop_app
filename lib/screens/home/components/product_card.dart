@@ -17,7 +17,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(defaultPadding / 2),
+      padding: const EdgeInsets.all(defaultPadding / 2),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(defaultPadding - 6),
         color: Colors.white,
@@ -36,7 +36,7 @@ class ProductCard extends StatelessWidget {
               height: 132,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: defaultPadding / 2,
           ),
           Row(
@@ -59,9 +59,9 @@ class ProductCard extends StatelessWidget {
               Expanded(
                   child: Text(
                 title,
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
               )),
-              SizedBox(
+              const SizedBox(
                 width: defaultPadding / 4,
               ),
               Text(

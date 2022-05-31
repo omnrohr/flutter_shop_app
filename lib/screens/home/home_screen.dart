@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shopapp/constants.dart';
+import '../../constants.dart';
 import './components/body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,7 +10,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: theAppBar(context),
-      body: Body(),
+      body: const Body(),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 
@@ -37,7 +38,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Text(
-            '15/2 New Texax',
+            '15/2 New Texas',
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ],
@@ -60,6 +61,58 @@ class HomeScreen extends StatelessWidget {
           icon: SvgPicture.asset('assets/icons/Notification.svg'),
         ),
       ],
+    );
+  }
+}
+
+class BottomNavBar extends StatelessWidget {
+  const BottomNavBar({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 70,
+      child: Padding(
+        padding: const EdgeInsets.only(
+            bottom: defaultPadding,
+            left: defaultPadding * 3,
+            right: defaultPadding * 3),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Image.asset(
+                'assets/images/hut.png',
+                height: 22,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Image.asset(
+                'assets/images/shopping-cart.png',
+                height: 22,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Image.asset(
+                'assets/images/heart.png',
+                height: 22,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Image.asset(
+                'assets/images/user.png',
+                height: 22,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
