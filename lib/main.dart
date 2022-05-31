@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Shop app',
       theme: ThemeData(
+          scaffoldBackgroundColor: bgColor,
           primarySwatch: Colors.blue,
           fontFamily: 'Gordita',
           textTheme:
