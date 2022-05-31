@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Shop app',
       theme: ThemeData(
           scaffoldBackgroundColor: bgColor,
+          // scaffoldBackgroundColor: Colors.grey,
           primarySwatch: Colors.blue,
           fontFamily: 'Gordita',
           textTheme:
