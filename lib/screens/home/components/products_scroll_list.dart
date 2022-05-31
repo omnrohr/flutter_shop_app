@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopapp/screens/details/details_screen.dart';
 import '../../../models/product.dart';
 import './product_card.dart';
 import '../../../constants.dart';
@@ -22,6 +23,10 @@ class ProductsScrollList extends StatelessWidget {
                     title: demo_product[index].title,
                     price: demo_product[index].price,
                     bgColor: demo_product[index].bgColor,
+                    onPress: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => DetailsScreen()));
+                    },
                   ),
                 )),
       ),
