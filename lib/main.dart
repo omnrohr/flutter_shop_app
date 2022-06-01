@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/onboarding/onborading_screen.dart';
 import './constants.dart';
 import './screens/home/home_screen.dart';
 
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Gordita',
           textTheme:
               const TextTheme(bodyText2: TextStyle(color: Colors.black54))),
-      home: const HomeScreen(),
+      // home: const HomeScreen(),
+      home: OnBoardingScreen(),
     );
   }
 }
